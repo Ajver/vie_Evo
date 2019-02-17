@@ -1,7 +1,8 @@
 #include <vie/Engine.h>
 #include <vie/Timer.h>
 
-class Map;
+class World;
+class Manager;
 
 class MainClass : public vie::Engine
 {
@@ -14,6 +15,13 @@ public:
 	void render(vie::Graphics* g);
 
 private:
-	vie::Timer fpsTimer;
-	Map* map;
+	vie::Timer m_fpsTimer;
+	World* m_world;
+	Manager* m_manager;
+
+	void processUpdates(float et);
+	void processTimers();
+	void processInput(float et);
+	void scaleCamera(float et);
+	void moveCamera(float et);
 };

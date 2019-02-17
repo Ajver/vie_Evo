@@ -143,14 +143,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Attributes.cpp" />
+    <ClCompile Include="Info.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainClass.cpp" />
-    <ClCompile Include="Map.cpp" />
+    <ClCompile Include="Manager.cpp" />
+    <ClCompile Include="World.cpp" />
     <ClCompile Include="Organism.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Attributes.h" />
+    <ClInclude Include="Info.h" />
     <ClInclude Include="MainClass.h" />
-    <ClInclude Include="Map.h" />
+    <ClInclude Include="Manager.h" />
+    <ClInclude Include="World.h" />
     <ClInclude Include="Organism.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -6,16 +6,18 @@
 class Organism;
 class Plant;
 
-class Map
+class World
 {
 public:
-	Map();
-	~Map();
+	World();
+	~World();
 
 	void update(float et);
 	void render(vie::Graphics* g);
 
 	std::vector<Organism*> orgs;
 	std::vector<Plant*> plants;
+
+	float timeSpeed;
 };
 
